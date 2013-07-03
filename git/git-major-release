@@ -1,0 +1,12 @@
+git checkout develop && \
+version=`node_bump_version -m` && \
+git checkout -b release/$version && \
+git commit package.json -m "bump version to $version" && \
+git checkout develop && git merge --no-ff release/$version && \
+git checkout master && \
+git merge --no-ff release/$version && \
+git tag -a $version && \
+git branch -d release/$version && \
+git push && \
+git push --tags
+

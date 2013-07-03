@@ -1,0 +1,11 @@
+{
+  "name": "node-release",
+  "version": "0.0.1",
+  "description": "Facilitate release of node software",
+  "main": "index.js",
+  "bin": {
+    "node_bump_version": "bin/bump.js"
+  },
+  "author": "Karl Gyllstrom",
+  "license": "BSD"
+}
