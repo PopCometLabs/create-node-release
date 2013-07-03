@@ -8,5 +8,6 @@ git merge --no-ff release/$version && \
 git tag -a $version && \
 git branch -d release/$version && \
 git push && \
-git push --tags
+git push --tags && \
+git checkout develop
 
