@@ -13,11 +13,20 @@ Creating a release does the following:
 
 # Installation
 
-  sudo make install
+    sudo make install
 
 # Usage
 
 ## Minor update
 
-This 
-  git release
+This updates the package version minor release (i.e. 0.X++.0):
+
+    git release
+
+## Major update
+
+This updates the package version major release (i.e. X++.0.0):
+
+    git major-release
+
+Note that the minor version values are reset to 0.
